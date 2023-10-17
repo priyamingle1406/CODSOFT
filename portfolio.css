@@ -1,0 +1,150 @@
+html{
+    scroll-behavior: smooth;
+}
+header{
+    background-color: #deddf7;
+    
+}
+nav{
+    text-align: right;
+    
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: #7b77f3;
+
+}
+.girl{
+    width: 600px;
+    height: 500px;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child1{
+    display: block;
+}
+a:hover{
+    color: #9c99ee;
+}
+.know{
+    border: #a4a4f1 solid 1px;
+    background-color: #5647fa;    
+    border-radius: 10px;
+}
+.know:hover{
+    background-color: #807cf1;
+}
+        
+        .slider-container {
+            width: 1100px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .card {
+            width: 1000px;
+            height: 220px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #f3f1f1;
+            box-shadow: 7px 7px 4px rgba(85, 82, 82, 0.1);
+            border-radius: 10px;
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .slider-nav button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            margin: 0 5px;
+        }
+
+        .projectcard {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ebebeb;
+            border-radius: 13px;
+            box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            overflow: hidden;
+
+        }
+        .projectcard:hover{
+            transform:scale(1.1);
+        }
+        
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+       
+        .card-content {
+            padding: 10px;
+        }
+
+        .container2{
+            display: flex;
+            justify-content: center;
+        }
+        .container3{
+            display: flex;
+            justify-content: center;
+            background-color: #deddf7;
+            border: #8e84f8 solid 80px;
+        }
+        .child1{
+            display: block;
+        }
+        .child2{
+            display: flex;
+        }
+        .child3{
+            display: flex;
+            column-gap: 15px;
+        }
+        .child4{
+            justify-content: center;
+        }
+        .c1:hover,.c2:hover,.c3:hover{
+            -webkit-filter: blur(1px);
+	        filter: blur(1px);
+	        -webkit-transition: .3s ease-in-out;
+	        transition: .3s ease-in-out;
+        }
+        .child2:hover{
+            color:#a4a4f1;
+        }
+        .child3:hover{
+            color:#a4a4f1;
+        }
+        footer{
+            
+            border: #14103a solid 2px;
+            height: 150px;
+            background-color: #14103a;
+            color: white;
+        }
+        .container4{
+            position: relative;
+            top: 40px;
+        }

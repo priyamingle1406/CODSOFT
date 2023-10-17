@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <header>
+        <img src="todo.png" alt="" height="40px" style="position: relative; top: 28px;">
+        <h1 style="text-align: center;">To-Do List</h1>
+        <br><br><br><br>
+        
+    </header>
+    <main>
+    <br><br><br><br><br>
+    <div class="container1">
+        <input type="text" name="task" id="task" placeholder="Add your task..." style="width: 350px; height: 50px; border-radius: 5px;border: 1px solid rgb(201, 198, 198);">
+        <button onclick="add()" class="add">ADD</button>
+         
+    </div>
+    <h5 style="color: rgb(42, 7, 75); text-align: center;">IF TASK COMPLETED, JUST CLICK ON THE TASK TO DELETE IT !!!</h5>
+    <ul id="taskList"></ul>
+    <script>
+        function add() {
+            var taskInput = document.getElementById("task");
+            var taskList = document.getElementById("taskList");
+
+            if (taskInput.value.trim() !== "") {
+                var taskText = taskInput.value;
+                taskInput.value = "";
+
+                var listItem = document.createElement("li");
+                listItem.textContent = taskText;
+
+                listItem.addEventListener("click", function () {
+                    this.remove();
+                });
+
+                taskList.appendChild(listItem);
+            }
+        }
+    </script>
+</main>
+</body>
+</html>

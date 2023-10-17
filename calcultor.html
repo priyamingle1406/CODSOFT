@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; text-decoration: underline ;">SIMPLE CALCULTOR</h1>
+    <div class="container1">
+        <div class="container2">
+        <input type="text" id="num" disabled style="width: auto;height: 40px; margin-top: 20px;margin-left: 30px; border-radius: 5px; background-color: rgb(252, 249, 249);">
+        <button onclick="clr()"style="width: 45px;height: 40px; margin-top: 20px; margin-bottom:10px;margin-left:10px; border-radius: 5px; border: 1px solid rgb(231, 229, 229);
+        background-color: rgb(168, 168, 168);">C</button>
+        </div>
+        <div class="container3">
+        <button onclick="dis('1')" class="child">1</button>
+        <button onclick="dis('2')" class="child">2</button>
+        <button onclick="dis('3')" class="child">3</button>
+        <button onclick="dis('/')" class="child" id="special">/</button>
+        </div>
+        <div class="container4">
+        <button onclick="dis('4')" class="child">4</button>
+        <button onclick="dis('5')" class="child">5</button>
+        <button onclick="dis('6')" class="child">6</button>
+        <button onclick="dis('*')" class="child" id="special">*</button>
+        </div>
+        <div class="container5">
+        <button onclick="dis('7')" class="child">7</button>
+        <button onclick="dis('8')" class="child">8</button>
+        <button onclick="dis('9')" class="child">9</button>
+        <button onclick="dis('-')" class="child" id="special">-</button>
+        </div>
+        <div class="container6">
+        <button onclick="dis('0')" class="child">0</button>
+        <button onclick="dis('.')" class="child" id="special">.</button>
+        <button onclick="solve()" class="child" id="special">=</button>
+        <button onclick="dis('+')" class="child" id="special">+</button>
+        </div>
+    </div>
+    <script>
+        function dis(value) {
+            document.getElementById('num').value += value;
+        }
+
+        function clr() {
+            document.getElementById('num').value = "";
+        }
+
+        function solve() {
+            let display = document.getElementById('num').value;
+            try {
+                document.getElementById('num').value = eval(display);
+            } catch (error) {
+                document.getElementById('num').value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://icons8.com/icon/lb87QsSuMbWL/call">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#id1">Home</a>
+            <a href="#id2">Skills</a>
+            <a href="#id3">Projects</a>
+            <a href="#id4">Contact</a>
+        </nav>
+        <div class="container1">
+        <img src="1.png" alt="a girl" class="girl">
+        <div class="child1">
+        <span><h1 id="id1">Hey! I am Priya Yadav.</h1></span>
+        <p style="font-family:'PT Serif', serif; font-weight: bold;">I am a student of BBD University <br> which strive to blend creativity with cutting-edge technology. <br> My journey involves designing captivating websites, mastering HTML, CSS, and JavaScript, and continuously expanding my skill set. <br> I'm dedicated to crafting user-centric digital experiences that leave a lasting impact. <br> Explore my evolving portfolio!</p></span>
+        <br>
+        <a href="New Resume_p.pdf" class="know" style="color: white;">See My Resume</a>
+        </div>
+        </div>
+    </header>
+
+    <br>
+    <h2 style="text-align: center; text-decoration: underline;" id="id2">AREAS OF EXPERTISE</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="card">
+                <img src="ima.png" alt="Image 1" style="height: 150px; width: 150px;">
+                <h4>JAVA</h4>
+            </div>
+            <div class="card">
+                <img src="image2.png" alt="Image 2" style="height: 150px; width: 150px;">
+                <h4>SQL</h4>
+            </div>
+            <div class="card">
+                <img src="image3.png" alt="Image 3" style="height: 150px; width: 150px;">
+                <h4>PYTHON</h4>
+            </div>
+            <div class="card">
+                <img src="image4.png" alt="Image 4" style="height: 150px; width: 150px;">
+                <h4>ML ALGORITHM</h4>
+            </div>
+            <div class="card">
+                <img src="image5.png" alt="Image 5" style="height: 150px; width: 150px;">
+                <h4>DATA ANALYSIS</h4>
+            </div>
+            <div class="card">
+                <img src="image6.jpg" alt="Image 6" style="height: 150px; width: 150px;">
+                <h4>HTML, CSS AND JS </h4>
+            </div>
+            <div class="card">
+                <img src="image7.png" alt="Image 7" style="height: 150px; width: 150px;">
+                <h4>COMMUNICATION AND TEAMWORK SKILLS</h4>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button onclick="prevSlide()">&#10094;</button>
+            <button onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let currentIndex = 0;
+        const cards = document.querySelectorAll('.card');
+        const slider = document.querySelector('.slider');
+
+        function showSlide(index) {
+            if (index < 0) {
+                currentIndex = cards.length - 1;
+            } else if (index >= cards.length) {
+                currentIndex = 0;
+            }
+
+            const offset = -currentIndex * 320; // Adjust this value based on card width + margin
+            slider.style.transform = `translateX(${offset}px)`;
+        }
+
+        function prevSlide() {
+            currentIndex--;
+            showSlide(currentIndex);
+        }
+
+        function nextSlide() {
+            currentIndex++;
+            showSlide(currentIndex);
+        }
+
+        // Initially, show the first slide
+        showSlide(currentIndex);
+    </script>
+    <br>
+    <h2 style="text-align: center; text-decoration: underline;" id="id3" >PROECTS SECTION </h2>
+    <div class="container2">
+    <div class="projectcard">
+        <img src="card1.png" alt="Card1 Image">
+        <div class="card-content">
+            <h3>House Price Prediction</h3>
+            <p>Built a House Price Prediction using Supervised Machine Learning algorithms.</p>
+        </div>
+    </div>
+    <div class="projectcard">
+        <img src="card2.jpg" alt="Card2 Image" style="height: 220px;">
+        <div class="card-content">
+            <h3>Makeup Website</h3>
+            <p> Created a Fully Dynamic MAKEUP AND STYLES website which can be used to book a salon according to their time . The website was made by using HTML & css.</p>
+        </div>
+    </div>
+    <div class="projectcard">
+        <img src="card3.jpg" alt="Card3 Image" style="height: 220px;">
+        <div class="card-content">
+            <h3>WordPress Website</h3>
+            <p> Developed a good-looking website using templates available in WordPress library and customised the template according to my personal requirements.</p>
+        </div>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <div class="container3">
+        <div class="child1">
+        <br><br><br><br><br>
+        <h2 style="text-decoration:underline;" id="id4">CONTACT ME</h2>
+        <br>
+        <div class="child2">
+        <img src="call.png" alt="">
+        <p>8149-13-4952</p>
+        <br>
+        </div>
+        <br>
+        <div class="child3">
+        <img src="gmail.png" alt="" style="height: 40px;width: 40px;">
+        <p>priya14usha@gmail.com</p>
+        <br>
+       </div>
+        <hr>
+        <br>
+        <div class="child4">
+        <a class="c1" href="https://www.instagram.com/priya.a146/" target="_blank"><img src="insta.png" alt=""></a>
+        <a class="c2" href="https://twitter.com/" target="_blank"><img src="twitter.png"></a>
+        <a class="c3" href="" target="_blank"><img src="linkedin.png" alt=""></a>
+        </div>
+        </div>
+        <img src="contact.png" alt="contact">
+    </div>
+    <br>
+    <footer>
+        <div class="container4">
+        <a href="https://www.instagram.com/priya.a146/"><img src="insta.png" alt="" style="height: 30px; width: 30px;"></a>
+        <a href="https://twitter.com/"><img src="twitter.png" alt="" style="height: 30px; width: 30px;"></a>
+        <a href="https://www.linkedin.com/in/priya-yadav-b1bb02271/"><img src="linkedin.png" alt="" style="height: 30px; width: 30px;"></a>
+        </div>
+        <p style="position: relative; top: 40px;">@2021 Sephora USA ,Inc. All rights reserved.</p>
+        <p style="position: relative; top: 40px;">Privacy Policy &ensp;&ensp; Terms of Use &ensp;&ensp;  Accessibilty &ensp;&ensp;  Sitemap</p>
+    </footer>
+</body>
+</html>
